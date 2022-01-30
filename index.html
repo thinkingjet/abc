@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Hacknado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="drag.js"></script>
+    <script src="window.js"></script>
+    <script src="appearance.js"></script>
+    <script src="./News.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <script src="Air_Quality.js"></script>
+</head>
+
+<body onload="newsFunction()">
+    
+    <div id="header">
+        <div style="float:left">
+            <img src="favicon.ico" width="40px" height="40px"></img>
+        </div>
+        <div id="header-title-container" class="header-item">
+            <h2>Hacknado..</h2>
+            
+        </div>
+        <div id="add-button" class="header-item">
+            <div id="plus-button">+</div>
+            <div class="drop-down">
+                <div onclick="addAir_Quality()">Air_Quality</div>
+                <div onclick="addWeather()">Weather</div>
+                <div onclick="addVolcano_Map()">Volcano_Map</div>
+                <div onclick="addTimer()">Timer/Clock</div>
+                <div onclick="addQuiz()">Quiz</div>
+                <iframe width="500" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://virtualsky.lco.global/embed/index.html?longitude=144.9631&latitude=37.8136&projection=polar&constellations=true&meteorshowers=true&live=true&az=186.84507422163477" allowTransparency="true"></iframe>
+            </div>
+            
+        </div>
+        
+        <div id="appearance-toggle" class="header-item">
+            <div id="darklight-button">◐</div>
+            <div class="drop-down">
+                <div id="automode-button" onclick="auto()">auto</div>
+                <div id="lightmode-button" onclick="lightmode()">light</div>
+                <div id="darkmode-button" onclick="darkmode()">dark</div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+
+    <div id="main-container">
+  
+  
+        <!-- <div class="section-parallax parallax-00" style="background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dc214649-d3ae-4d8c-88bf-03d4e8a4c80c/de10a2n-e3c380e5-e331-42bb-a080-1aedc2eab018.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RjMjE0NjQ5LWQzYWUtNGQ4Yy04OGJmLTAzZDRlOGE0YzgwY1wvZGUxMGEybi1lM2MzODBlNS1lMzMxLTQyYmItYTA4MC0xYWVkYzJlYWIwMTguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.oNmSTK-1sOUQeQH3YAtlyRQ1bKjGLWla0AXCFSTeL9M');"></div> -->
+        <div class="ssection-parallax parallax-01" style="background-image: url('https://i.pinimg.com/originals/8f/3b/e5/8f3be58bef332f0f385c7500bd88b8d1.jpg');"></div>
+      <!-- http://www.ivang-design.com/svg-load/parallax/parallax-0.png default for 1st one -->
+      <!-- http://www.ivang-design.com/svg-load/parallax/parallax-01.png default for 2nd -->
+
+        <h1 class="main-heading">Environmental News</h1>
+        
+    </div>
+
+</body>
+
+</html>
